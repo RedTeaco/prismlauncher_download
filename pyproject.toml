@@ -1,0 +1,15 @@
+[project]
+name            = "prismlauncher-download"
+version         = "0.1.0"
+description     = "Auto detect prismlauncher and download blocked mods"
+readme          = "README.md"
+authors         = [{ name = "redtea", email = "ty_pjy@163.com" }]
+requires-python = ">=3.13"
+dependencies    = ["pywinauto>=0.6.9"]
+
+[project.scripts]
+prismlauncher-download = "prismlauncher_download:main"
+
+[build-system]
+requires      = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
